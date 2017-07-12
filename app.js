@@ -1,6 +1,11 @@
 (function(){
 	var app = angular.module('workoutlog', [
-		'ui.router'
+		'ui.router',
+		'workoutlog.auth.signup',
+		'workoutlog.auth.signin',
+		'workoutlog.define',
+		'workoutlog.logs',
+		'workoutlog.history'
 	]);
 	function config($urlRouterProvider){
 		$urlRouterProvider.otherwise('/signin');
